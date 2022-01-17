@@ -10,6 +10,8 @@ Add the following line into your package.json:
 "react-native-android-navbar-height": "git+https://github.com/ConnectyCube/react-native-android-navbar-height.git#master"
 ```
 
+then do `npm install`
+
 ## Usage
 
 ```js
