@@ -1,18 +1,23 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-android-navbar-height';
+import { StyleSheet, View, Text, Dimensions } from 'react-native';
+import { getNavigationBarHeight } from 'react-native-android-navbar-height';
+
+const scale = Dimensions.get('screen').scale;
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
+  const [height, setHeight] = React.useState<number | undefined>();
 
   React.useEffect(() => {
-    multiply(3, 7).then(setResult);
+    getNavigationBarHeight().then(setHeight);
   }, []);
+
+  const finalResult = height / scale;
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text>Result: {height}</Text>
+      <Text>Final result: {finalResult}</Text>
     </View>
   );
 }
