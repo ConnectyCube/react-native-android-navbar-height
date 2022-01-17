@@ -17,6 +17,6 @@ const AndroidNavbarHeight = NativeModules.AndroidNavbarHeight
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return AndroidNavbarHeight.multiply(a, b);
+export function getNavigationBarHeight(): Promise<number> {
+  return AndroidNavbarHeight.getNavigationBarHeight();
 }
