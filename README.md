@@ -25,6 +25,8 @@ const navigationBarHeight = await getNavigationBarHeight();
 const result = navigationBarHeight / scale;
 ```
 
+See example for more info https://github.com/ConnectyCube/react-native-android-navbar-height/blob/main/example/src/App.tsx
+
 ## Contributing
 
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
