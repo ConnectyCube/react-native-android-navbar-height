@@ -11,11 +11,14 @@ npm install react-native-android-navbar-height
 ## Usage
 
 ```js
-import { multiply } from "react-native-android-navbar-height";
+import { Dimensions } from "react-native";
+import { getNavigationBarHeight } from "react-native-android-navbar-height";
 
 // ...
 
-const result = await multiply(3, 7);
+const scale = Dimensions.get('screen').scale;
+const navigationBarHeight = await getNavigationBarHeight();
+const result = navigationBarHeight / scale;
 ```
 
 ## Contributing
