@@ -7,7 +7,7 @@ A library to obtain Android Navigation Bar height
 Add the following line into your package.json:
 
 ```sh
-"react-native-android-navbar-height": "git+https://github.com/ConnectyCube/react-native-android-navbar-height.git#master"
+"react-native-android-navbar-height": "git+https://github.com/ConnectyCube/react-native-android-navbar-height.git#main"
 ```
 
 then do `npm install`
