@@ -1,3 +1,7 @@
+// This file is a wrapper around `yarn` that allows us to run `yarn` from the
+// root of the project, but still have it run the `bootstrap` script when no
+// arguments are passed.
+
 const os = require('os');
 const path = require('path');
 const child_process = require('child_process');
