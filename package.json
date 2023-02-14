@@ -1,6 +1,6 @@
 {
   "name": "react-native-android-navbar-height",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A library to obtain Android Navigation Bar height",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
